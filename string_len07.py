@@ -22,6 +22,7 @@ def main(s1,s2,s3):
         s=f'[{s1},{s3}]'
     if len(s1)%2==1 and len(s2)%2==1 and  len(s3)%2==1: 
         s=f'[{s1},{s2},{s3}]'
-    
+    else:
+        s=f'[]'
     return s
 print(main('aaada','ssxs','ddd'))
