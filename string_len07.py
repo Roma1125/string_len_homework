@@ -10,19 +10,19 @@ def main(s1,s2,s3):
     """
     if len(s1)%2==1 and len(s2)%2==0 and  len(s3)%2==0: 
         s=f'[{s1}]'
-    if len(s2)%2==1 and len(s1)%2==0 and len(s3)%2==0:
+    elif len(s2)%2==1 and len(s1)%2==0 and len(s3)%2==0:
         s=f'[{s2}]'
-    if len(s3)%2==1 and len(s2)%2==0 and len(s1)%2==0:
+    elif len(s3)%2==1 and len(s2)%2==0 and len(s1)%2==0:
         s=f'[{s3}]'
-    if (len(s1)%2==1 and len(s2)%2==1) and  len(s3)%2==0: 
+    elif (len(s1)%2==1 and len(s2)%2==1) and  len(s3)%2==0: 
         s=f'[{s1},{s2}]'
-    if (len(s2)%2==1 and len(s3)%2==1) and len(s1)%2==0:
+    elif (len(s2)%2==1 and len(s3)%2==1) and len(s1)%2==0:
         s=f'[{s2},{s3}]'
-    if (len(s3)%2==1 and len(s1)%2==1) and len(s2)%2==0 :
+    elif (len(s3)%2==1 and len(s1)%2==1) and len(s2)%2==0 :
         s=f'[{s1},{s3}]'
-    if len(s1)%2==1 and len(s2)%2==1 and  len(s3)%2==1: 
+    elif len(s1)%2==1 and len(s2)%2==1 and  len(s3)%2==1: 
         s=f'[{s1},{s2},{s3}]'
     else:
-        s=f'[]'
+        s = []
     return s
-print(main('aaada','ssxs','ddd'))
+print(main('aadlak','sssxss','ksdld'))
