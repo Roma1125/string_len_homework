@@ -8,21 +8,19 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    if len(s1)%2==1 and len(s2)%2==0 and  len(s3)%2==0: 
-        s=f'[{s1}]'
-    elif len(s2)%2==1 and len(s1)%2==0 and len(s3)%2==0:
-        s=f'[{s2}]'
-    elif len(s3)%2==1 and len(s2)%2==0 and len(s1)%2==0:
-        s=f'[{s3}]'
-    elif (len(s1)%2==1 and len(s2)%2==1) and  len(s3)%2==0: 
-        s=f'[{s1},{s2}]'
-    elif (len(s2)%2==1 and len(s3)%2==1) and len(s1)%2==0:
-        s=f'[{s2},{s3}]'
-    elif (len(s3)%2==1 and len(s1)%2==1) and len(s2)%2==0 :
-        s=f'[{s1},{s3}]'
-    elif len(s1)%2==1 and len(s2)%2==1 and  len(s3)%2==1: 
-        s=f'[{s1},{s2},{s3}]'
-    else:
-        s = []
+    # 
+    s = '['
+    if len(s1) % 2:
+        s += s1
+        if len(s2) % 2:
+            s += ', '
+    if len(s2) % 2:
+        s += s2
+        if len(s3) % 2:
+            s += ', '
+    if len(s3) % 2:
+        s += s3
+    
+    s += ']'
     return s
-print(main('aadlak','sssxss','ksdld'))
+print(main('21','0','14'))
