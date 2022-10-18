@@ -12,15 +12,14 @@ def main(s1,s2,s3):
     s = '['
     if len(s1) % 2:
         s += s1
-        if len(s2) % 2:
+        if len(s2) % 2 or len(s3) % 2:
             s += ', '
     if len(s2) % 2:
         s += s2
         if len(s3) % 2:
             s += ', '
     if len(s3) % 2:
-        s += s3
-    
+        s += s3    
     s += ']'
-    return s
-print(main('21','0','14'))
+    return s 
+print(main('123','33','333'))
